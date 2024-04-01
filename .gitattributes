@@ -1,2 +1,2 @@
-db/1a70e8a1-37cd-436b-ae9f-2f3e79d8127c filter=lfs diff=lfs merge=lfs -text
+db/1a70e8a1-37cd-436b-ae9f-2f3e79d8127c/data_level0.bin filter=lfs diff=lfs merge=lfs -text
 db/chroma.sqlite3 filter=lfs diff=lfs merge=lfs -text
