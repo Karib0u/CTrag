@@ -36,6 +36,23 @@ https://github.com/amscotti/local-LLM-with-RAG
 1. Put the PDFs in the `reports` folder
 2. Run the tool, it will automatically process the files and add them to the db.
 
+## Available commands
+
+Here are the available command line arguments and their default values for running the `CTrag` Streamlit application:
+```css
+streamlit run app.py [-m MODEL] [-e EMBEDDING_MODEL] [-p PATH] [--nb-docs NB_DOCS]
+```
+* `-m MODEL`, `--model MODEL`: The name of the LLM model to use. Default is `"dolphin-mistral"`.
+* `-e EMBEDDING_MODEL`, `--embedding_model EMBEDDING_MODEL`: The name of the embedding model to use. Default is `"nomic-embed-text"`.
+* `-p PATH`, `--path PATH`: The path to the directory containing documents to load. Default is `"reports"`.
+* `--nb-docs NB_DOCS`: The number of documents to retrieve from the vector database. Default is `8`.
+
+Example usage:
+```python
+streamlit run app.py -m "dolphin-mistral" -e "nomic-embed-text" -p "/path/to/documents" --nb-docs 10
+```
+This command runs the `CTrag` Streamlit application using the `"dolphin-mistral"` LLM model, the `"nomic-embed-text"` embedding model, loads documents from the `"/path/to/documents"` directory, and retrieves `10` documents from the vector database.
+
 ## Source used to build the original vector database
 
 - [VX-Underground archives](https://vx-underground.org/)
