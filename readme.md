@@ -19,7 +19,7 @@ https://github.com/amscotti/local-LLM-with-RAG
 
 ## Setup
 
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine using Git LFS to ensure you receive the already processed vector database with the 2200 reports. If you haven't installed Git LFS, please follow the instructions [here](https://git-lfs.github.com/).
 2. Create a Python virtual environment by running `python3 -m venv env`.
 3. Activate the virtual environment by running `source env/bin/activate` on Unix or MacOS, or `.\env\Scripts\activate` on Windows.
 4. Install the required Python packages by running `pip install -r requirements.txt`.
